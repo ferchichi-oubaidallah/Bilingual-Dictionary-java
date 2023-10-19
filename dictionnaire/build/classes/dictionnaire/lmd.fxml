@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="aa" prefHeight="559.0" prefWidth="677.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dictionnaire.LmdController">
+   <children>
+      <Accordion layoutY="14.0" />
+      <VBox alignment="CENTER" prefHeight="575.0" prefWidth="150.0" style="-fx-background-color: yellow;">
+         <children>
+            <Label alignment="TOP_CENTER" contentDisplay="TOP" text="admin">
+               <font>
+                  <Font size="39.0" />
+               </font>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#ajout" prefHeight="36.0" prefWidth="153.0" text="ajouter une traduction" />
+            <Button mnemonicParsing="false" onAction="#ajoutmotexistant" prefHeight="36.0" prefWidth="161.0" text="ajouter traduction existant" />
+            <Button mnemonicParsing="false" onAction="#miseajour" prefHeight="36.0" prefWidth="153.0" text="mise a jour traduction" />
+            <Button mnemonicParsing="false" onAction="#supprimer" prefHeight="36.0" prefWidth="153.0" text="supprimer traduction" />
+            <Button mnemonicParsing="false" onAction="#mainn" text="back" />
+         </children>
+      </VBox>
+      <Label fx:id="m2" layoutX="266.0" layoutY="146.0" text="langue" />
+      <ComboBox fx:id="m7" layoutX="325.0" layoutY="142.0" prefWidth="150.0" />
+      <Label fx:id="m3" layoutX="239.0" layoutY="184.0" text="nouvelle mot" />
+      <Label fx:id="m4" layoutX="274.0" layoutY="229.0" text="type" />
+      <Label fx:id="m5" layoutX="259.0" layoutY="277.0" text="exemple 1" />
+      <Label fx:id="m6" layoutX="259.0" layoutY="354.0" text="exemple 2" />
+      <TextField fx:id="m8" layoutX="326.0" layoutY="179.0" />
+      <ComboBox fx:id="m9" layoutX="325.0" layoutY="226.0" prefWidth="150.0" />
+      <TextArea fx:id="m10" layoutX="326.0" layoutY="269.0" prefHeight="77.0" prefWidth="149.0" />
+      <TextArea fx:id="m11" layoutX="326.0" layoutY="354.0" prefHeight="77.0" prefWidth="149.0" />
+      <Button fx:id="m12" layoutX="363.0" layoutY="451.0" mnemonicParsing="false" onAction="#updatetrad" text="mise a jour" />
+      <Label fx:id="s1" layoutX="203.0" layoutY="35.0" text="donner la traductio a supprimer">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="s2" layoutX="317.0" layoutY="160.0" />
+      <Button fx:id="s3" layoutX="357.0" layoutY="245.0" mnemonicParsing="false" onAction="#supprimertraduction" text="supprimer" />
+      <Label fx:id="m1" layoutX="219.0" layoutY="31.0" text="mettre a jor une traduction">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="a1" layoutX="179.0" layoutY="107.0" text="langue" />
+      <ComboBox fx:id="l3" layoutX="416.0" layoutY="106.0" prefWidth="150.0" />
+      <ComboBox fx:id="l2" layoutX="263.0" layoutY="103.0" prefWidth="150.0" />
+      <Label fx:id="a2" layoutX="186.0" layoutY="140.0" text="mot" />
+      <Label fx:id="a3" layoutX="185.0" layoutY="184.0" text="type" />
+      <Label fx:id="a4" layoutX="170.0" layoutY="246.0" text="exemple 1" />
+      <TextField fx:id="l5" layoutX="417.0" layoutY="139.0" />
+      <TextField fx:id="l4" layoutX="263.0" layoutY="139.0" />
+      <ComboBox fx:id="l7" layoutX="416.0" layoutY="170.0" prefWidth="150.0" />
+      <ComboBox fx:id="l6" layoutX="265.0" layoutY="170.0" prefWidth="150.0" />
+      <TextArea fx:id="l11" layoutX="414.0" layoutY="316.0" prefHeight="105.0" prefWidth="149.0" />
+      <TextArea fx:id="l10" layoutX="263.0" layoutY="316.0" prefHeight="105.0" prefWidth="149.0" />
+      <TextArea fx:id="l9" layoutX="416.0" layoutY="205.0" prefHeight="105.0" prefWidth="149.0" />
+      <TextArea fx:id="l8" layoutX="265.0" layoutY="205.0" prefHeight="105.0" prefWidth="149.0" />
+      <Button fx:id="l12" layoutX="254.0" layoutY="487.0" mnemonicParsing="false" onAction="#ajouterTraduction" text="ajouter" />
+      <Label fx:id="a5" layoutX="170.0" layoutY="352.0" text="exemple 2" />
+      <Label fx:id="l1" layoutX="257.0" layoutY="21.0" text="ajouter une traduction">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="s5" layoutX="317.0" layoutY="131.0" prefWidth="150.0" />
+      <Label fx:id="q1" layoutX="427.0" layoutY="362.0" text="mot" />
+      <TextField fx:id="q2" layoutX="326.0" layoutY="99.0" />
+      <Button fx:id="chercher" layoutX="583.0" layoutY="99.0" mnemonicParsing="false" onAction="#motafficher" text="chercher" />
+      <Button fx:id="exi" layoutX="248.0" layoutY="487.0" mnemonicParsing="false" onAction="#tradexi" text="ajouter traduction existant" />
+      <Button fx:id="hsup" layoutX="583.0" layoutY="167.0" mnemonicParsing="false" onAction="#rech" prefHeight="25.0" prefWidth="62.0" text="chercher" />
+      <TextArea fx:id="aa2" layoutX="185.0" layoutY="279.0" prefHeight="200.0" prefWidth="414.0" />
+   </children>
+</AnchorPane>
